@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
+
   theme: {
     extend: {},
     fontFamily: {
@@ -21,6 +22,7 @@ module.exports = {
       current: "currentColor",
       white: "#cfcfaf",
       black: { 100: "232323", 200: "#37465B", 300: "#212B38" },
+      gris: "#6e7073",
       midnight: "#121063",
       metal: "#565584",
       tahiti: {
