@@ -1,23 +1,25 @@
-import Inicio from "../components/main/components/inicio";
-import Proyectos from "../components/sections/main/pages/Productos";
-import { NotFound } from "../components/sections/main/pages/ErrorNotFound";
 import App from "../App";
 import { createBrowserRouter } from "react-router-dom";
+// import Main from "../components/main";
+import Inicio from "../components/main/pages/inicio";
+import Error from "../components/main/components/error";
+import Proyecto from "../components/main/pages/proyectos";
 
-export const router = createBrowserRouter([
+const Router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <NotFound />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
         element: <Inicio />,
       },
       {
-        path: "/productos",
-        element: <Proyectos />,
+        path: "/proyectos",
+        element: <Proyecto />,
       },
     ],
   },
 ]);
+export default Router;

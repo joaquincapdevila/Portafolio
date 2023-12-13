@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-const Contacto = () => {
+const Formulario = () => {
   const [valorDelInput, setValorDelInput] = useState({
     nombre: "",
     email: "",
@@ -119,4 +119,4 @@ const Contacto = () => {
   );
 };
 
-export default Contacto;
+export default Formulario;

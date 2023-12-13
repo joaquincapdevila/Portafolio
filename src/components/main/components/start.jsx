@@ -1,4 +1,4 @@
-export const Inicio = () => {
+export const Start = () => {
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8 dark:text-white">
       {/* PRIMER SVG DE FONDO */}
@@ -8,7 +8,7 @@ export const Inicio = () => {
         <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-viol to-vrac opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" />
       </div>
       {/* TEXTO */}
-      <div className="mx-auto max-w-2xl py-32 sm:py-48 ">
+      <div className="mx-auto max-w-4xl py-32 sm:py-48 ">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-vrac hover:ring-gray-900/20 animate-fade2">
             Conoce mi linkedin en el siguente enlace.{" "}
@@ -59,4 +59,4 @@ export const Inicio = () => {
     </div>
   );
 };
-export default Inicio;
+export default Start;

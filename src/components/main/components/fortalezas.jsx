@@ -46,7 +46,7 @@ const skill = [
 
 const Fortalezas = () => {
   return (
-    <section className="relative px-6 pt-14 z-20 dark:text-white">
+    <section className="relative px-6 z-20 dark:text-white">
       <div className="mx-auto max-w-4xl py-16 flex justify-center lg:justify-between flex-wrap sm:flex-nowrap items-center gap-x-12">
         <img
           src={code}
