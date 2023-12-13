@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logojoa from "../../../public/logojoablack.svg";
+import logojoa from "../../../public/logojoa.svg";
 
 const navigation = [
   { name: "Inicio", href: "#" },
-  { name: "Conoce más", href: "#" },
   { name: "Proyectos", href: "#" },
   { name: "Contacto", href: "#" },
 ];

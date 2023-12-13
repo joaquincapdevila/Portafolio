@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 
 const Contacto = () => {
@@ -40,7 +41,7 @@ const Contacto = () => {
                   id="nombre"
                   type="text"
                   onChange={manejarCambio}
-                  className=" w-full rounded-md  py-1.5 px-2 text-gray-900 shadow-sm focus:ring-viol"
+                  className=" w-full rounded-md  py-1.5 px-2 text-black-300 shadow-sm focus:ring-viol"
                 />
               </div>
             </div>
@@ -58,7 +59,7 @@ const Contacto = () => {
                   id="apodo"
                   type="text"
                   onChange={manejarCambio}
-                  className=" w-full rounded-md  py-1.5 px-2 text-gray-900 shadow-sm focus:ring-viol"
+                  className=" w-full rounded-md  py-1.5 px-2 text-black-300 shadow-sm focus:ring-viol"
                 />
               </div>
             </div>
@@ -77,7 +78,7 @@ const Contacto = () => {
                   type="email"
                   onChange={manejarCambio}
                   placeholder="sunombre@gmail.com"
-                  className=" w-full rounded-md  py-1.5 px-2 text-gray-900 shadow-sm focus:ring-viol"
+                  className=" w-full rounded-md  py-1.5 px-2 text-black-300 shadow-sm focus:ring-viol"
                 />
               </div>
             </div>
@@ -94,7 +95,7 @@ const Contacto = () => {
                   type="text"
                   onChange={manejarCambio}
                   rows={3}
-                  className=" w-full rounded-md  py-1.5 px-2 text-gray-900 shadow-sm focus:ring-viol"
+                  className=" w-full rounded-md  py-1.5 px-2 text-black-300 shadow-sm focus:ring-viol"
                 />
               </div>
             </div>

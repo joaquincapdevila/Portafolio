@@ -1,4 +1,4 @@
-import Contacto from "./components/contacto";
+// import Contacto from "./components/contacto";
 import Inicio from "./components/inicio";
 import Fortalezas from "./components/referecias_pages";
 import Works from "./components/work";
@@ -14,7 +14,7 @@ const Main = () => {
       <Inicio />
       <Fortalezas />
       <Works />
-      <Contacto />
+      {/* <Contacto /> */}
     </main>
   );
 };

@@ -23,11 +23,14 @@ export const Inicio = () => {
           </div>
         </div>
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl animate-fade">
-            Full Stack Developer
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl animate-fade">
+            Hi, I&apos;m Joaquin
           </h1>
+          <h2 className="text-xl italic tracking-tight text-gray-900 sm:text-2xl animate-fade my-6">
+            Full Stack Developer
+          </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600 animate-fade1">
-            ¿Empezamos juntos el próximo proyecto?
+            ¿let&apos;s start the next project together?
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
