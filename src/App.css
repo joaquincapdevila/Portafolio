@@ -612,12 +612,12 @@ video {
   z-index: 50;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.z-0 {
+  z-index: 0;
 }
 
-.row-span-1 {
-  grid-row: span 1 / span 1;
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .-m-1 {
@@ -729,6 +729,10 @@ video {
   height: 2rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -738,35 +742,12 @@ video {
   height: fit-content;
 }
 
-.max-h-11 {
-  max-height: 2.75rem;
-}
-
-.max-h-28 {
-  max-height: 7rem;
-}
-
-.max-h-80 {
-  max-height: 20rem;
-}
-
 .max-h-72 {
   max-height: 18rem;
 }
 
-.min-h-fit {
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
-
-.min-h-max {
-  min-height: -moz-max-content;
-  min-height: max-content;
-}
-
-.min-h-min {
-  min-height: -moz-min-content;
-  min-height: min-content;
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-6 {
@@ -793,21 +774,8 @@ video {
   width: 100vw;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .min-w-full {
   min-width: 100%;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
 }
 
 .max-w-4xl {
@@ -816,21 +784,6 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-fit {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
-.max-w-min {
-  max-width: -moz-min-content;
-  max-width: min-content;
-}
-
-.max-w-max {
-  max-width: -moz-max-content;
-  max-width: max-content;
 }
 
 .flex-1 {
@@ -904,24 +857,12 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
 }
 
 .items-start {
@@ -962,10 +903,6 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .gap-x-12 {
@@ -1029,6 +966,11 @@ video {
 .border-viol {
   --tw-border-opacity: 1;
   border-color: rgb(114 110 255 / var(--tw-border-opacity));
+}
+
+.bg-black-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 70 91 / var(--tw-bg-opacity));
 }
 
 .bg-dark-blue {
@@ -1132,6 +1074,11 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-32 {
@@ -1408,10 +1355,6 @@ video {
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:pb-5 {

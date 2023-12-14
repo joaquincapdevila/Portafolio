@@ -20,14 +20,17 @@ function Proyecto() {
     },
   ];
   return (
-    <section className="h-screen w-screen relative isolate px-6 pt-20 lg:px-8 flex justify-center">
+    <section className="h-screen w-screen relative isolate px-6 mx-auto py-24 z-20 lg:px-8 flex justify-center">
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12  mt-6 justify-items-center">
         {proyects.map((datos) => (
           <li
             key={datos.key}
-            className="max-w-sm max-h-72 rounded-2xl overflow-hidden shadow-lg flex flex-col mt-4 bg-white col-span-1">
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{datos.titulo}</div>
+            className="relative max-w-sm h-fit rounded-2xl overflow-hidden shadow-lg flex flex-col mt-4 col-span-1">
+            <div className="w-full h h-full bg-black-200 absolute z-0 hidden">
+              <img src="" alt="" className="w-full h h-full" />
+            </div>
+            <div className="px-6 py-4 w-full h h-full z-20">
+              <h6 className="font-bold text-xl mb-2">{datos.titulo}</h6>
               <p className="text-gray-700 text-sm md:text-base">{datos.desc}</p>
             </div>
           </li>

@@ -18,7 +18,7 @@ const contacto = [
   {
     nombre: "behance",
     svg: behance,
-    href: "https://github.com/joaquincapdevila?tab=repositories",
+    href: "https://www.behance.net/joaquncapdevila",
   },
 ];
 const Footer = () => {
@@ -38,19 +38,15 @@ const Footer = () => {
                   className="hover:scale-110 transition-transform"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <embed src={a.svg} alt={a.nombre} className="h-6" />
+                  <img
+                    src={a.svg}
+                    alt={a.nombre}
+                    className="h-6 hover:scale-110 transition-transform"
+                  />
                 </a>
               </li>
             </label>
           ))}
-          <li>
-            <p className=" flex flex-nowrap gap-3">
-              <span>
-                <embed src={envelope} className="h-6" />
-              </span>
-              : joaquincapdeviladev@gmail.com
-            </p>
-          </li>
         </ul>
       </div>
     </section>
