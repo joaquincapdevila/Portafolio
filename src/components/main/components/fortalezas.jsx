@@ -58,11 +58,15 @@ const Fortalezas = () => {
             About Me
           </h3>
           <p className="mt-6 text-sm md:text-base text-gray-600 ">
-            Soy una persona analítica y detallista, lo que me permite
+            {/* Soy una persona analítica y detallista, lo que me permite
             identificar problemas y encontrar soluciones creativas de manera
             efectiva. Me gusta trabajar en equipo, compartir conocimientos y
             aprender de mis colegas, ya que creo que la colaboración es
-            fundamental para el éxito de cualquier proyecto.
+            fundamental para el éxito de cualquier proyecto. */}
+            I am an analytical and detailed person, which allows me identify
+            problems and find creative solutions effective. I like to work as a
+            team, share knowledge and learn from my colleagues, as I believe
+            that collaboration is fundamental to the success of any project.
           </p>
 
           <h4 className="my-6 text-2xl font-bold tracking-tight text-gray-900 underline-offset-4">

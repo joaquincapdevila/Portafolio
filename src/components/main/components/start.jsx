@@ -11,14 +11,14 @@ export const Start = () => {
       <div className="mx-auto max-w-4xl py-32 sm:py-48 ">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-vrac hover:ring-gray-900/20 animate-fade2">
-            Conoce mi linkedin en el siguente enlace.{" "}
+            Get to know my linkedin in this link.{" "}
             <a
               href="https://www.linkedin.com/in/joaquincapdevila/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-indigo-600">
               <span className="absolute inset-0" aria-hidden="true" />
-              Ver más <span aria-hidden="true">&rarr;</span>
+              Show more <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>

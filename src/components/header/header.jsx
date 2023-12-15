@@ -5,9 +5,9 @@ import logojoa from "../../../public/logojoa.svg";
 import { NavLink } from "react-router-dom";
 
 const navigation = [
-  { name: "Inicio", href: "/" },
-  { name: "Proyectos", href: "/proyectos" },
-  { name: "Contacto", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Proyects", href: "/proyectos" },
+  { name: "Contact", href: "#" },
 ];
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
           aria-label="Global">
           {/* LOGOTIPO PERSONAL */}
           <div className="flex lg:flex-1">
-            <NavLink to="#" className="-m-1.5 p-1.5">
+            <NavLink to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">My Brand</span>
               <img className="h-8 w-auto" src={logojoa} alt="logojoa" />
             </NavLink>
