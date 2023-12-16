@@ -2,7 +2,6 @@ import logojoa from "../../../public/logojoa.svg";
 import github from "../../../public/github.svg";
 import behance from "../../../public/behance.svg";
 import linkedin from "../../../public/linkedin.svg";
-import envelope from "../../../public/envelope.svg";
 
 const contacto = [
   {
@@ -31,21 +30,19 @@ const Footer = () => {
         </p>
         <ul className="flex list-none gap-5 mt-8 ">
           {contacto.map((a) => (
-            <label key={a.nombre} htmlFor={a.nombre}>
-              <li key={a.nombre}>
-                <a
-                  href={a.href}
-                  className="hover:scale-110 transition-transform"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <img
-                    src={a.svg}
-                    alt={a.nombre}
-                    className="h-6 hover:scale-110 transition-transform"
-                  />
-                </a>
-              </li>
-            </label>
+            <li key={a.nombre}>
+              <a
+                href={a.href}
+                className="hover:scale-110 transition-transform"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  src={a.svg}
+                  alt={a.nombre}
+                  className="h-6 hover:scale-110 transition-transform"
+                />
+              </a>
+            </li>
           ))}
         </ul>
       </div>

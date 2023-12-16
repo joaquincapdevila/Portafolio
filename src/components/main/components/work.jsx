@@ -32,7 +32,7 @@ export const Works = () => {
           {descripciones.map((datos) => (
             <li
               key={datos.key}
-              className="max-w-sm rounded-2xl overflow-hidden shadow-lg flex flex-col flex-1 mx-4 mt-4 bg-white hover:scale-110 transition-transform">
+              className="max-w-sm rounded-2xl overflow-hidden shadow-lg flex flex-col flex-1 mx-4 mt-4 bg-white">
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{datos.titulo}</div>
                 <p className="text-gray-700 text-sm md:text-base">
