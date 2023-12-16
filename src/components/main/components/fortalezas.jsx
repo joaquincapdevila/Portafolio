@@ -50,7 +50,7 @@ const Fortalezas = () => {
       <div className="mx-auto max-w-4xl py-16 flex justify-center lg:justify-between flex-wrap sm:flex-nowrap items-center gap-x-12">
         <img
           src={code}
-          alt="foto de joaquin"
+          alt="svg code"
           className="w-[30%] hidden lg:block mix-blend-multiply"
         />
         <div className="py-16 mx-auto">
@@ -58,11 +58,6 @@ const Fortalezas = () => {
             About Me
           </h3>
           <p className="mt-6 text-sm md:text-base text-gray-600 ">
-            {/* Soy una persona analítica y detallista, lo que me permite
-            identificar problemas y encontrar soluciones creativas de manera
-            efectiva. Me gusta trabajar en equipo, compartir conocimientos y
-            aprender de mis colegas, ya que creo que la colaboración es
-            fundamental para el éxito de cualquier proyecto. */}
             I am an analytical and detailed person, which allows me identify
             problems and find creative solutions effective. I like to work as a
             team, share knowledge and learn from my colleagues, as I believe
