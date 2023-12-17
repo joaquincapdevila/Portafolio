@@ -1,6 +1,6 @@
 import portafolioimage from "../../../../public/works/portafolio.png";
 import portafolio2 from "../../../../public/works/portafolio_proyects.png";
-// import portafolioimage from "../../../../public/works/portafolio.png";
+import portafolio3 from "../../../../public/works/portafolio_contact.png";
 import weatherImage from "../../../../public/works/weather.png";
 import weatherImage2 from "../../../../public/works/weather2.png";
 import weatherImage3 from "../../../../public/works/weather3.png";
@@ -10,26 +10,18 @@ const Proyecto = () => {
     {
       key: "weather",
       titulo: "Weather App",
-      desc: "Una aplicación web que muestra el clima en tiempo real de cualquier lugar del mundo. Permite buscar por nombre, coordenadas o ubicación actual del usuario. Usa la API de OpenWeatherMap para obtener los datos meteorológicos y la API de Geolocation para obtener la posición del usuario. Está desarrollada con HTML, CSS y JavaScript, usando el método async/await para las peticiones asíncronas.",
+      desc: "A web application that shows the weather in real time from anywhere in the world. Allows you to search by name, coordinates. It uses the OpenWeatherMap API to get the weather data and the Geolocation. It is developed with HTML, CSS and JavaScript, using the async/await method for asynchronous requests.",
       imagen: weatherImage,
       imagen2: weatherImage2,
       imagen3: weatherImage3,
     },
     {
       key: "webs",
-      titulo: "Desarrollo Web",
-      desc: "Un portfolio web que muestra mis proyectos, habilidades y contacto. Tiene un diseño responsive, moderno y atractivo, con efectos de animación y transición. Usa HTML, CSS y Bootstrap para el maquetado, JavaScript y jQuery para la interactividad, y PHP y MySQL para el backend y la base de datos.",
+      titulo: "Portfolio",
+      desc: "A web portfolio that shows my projects, skills and contact. It has a responsive, modern and attractive design, with animation and transition effects. It uses HTML, CSS and Tailwind for layout, JavaScript for interactivity, and PHP and MySQL for the backend and database.",
       imagen: portafolioimage,
       imagen2: portafolio2,
-      imagen3: "",
-    },
-    {
-      key: "estudios",
-      titulo: "Estudios",
-      desc: "Una aplicación web que ayuda a los estudiantes a organizar sus tareas, exámenes y horarios. Permite crear, editar y eliminar asignaturas, tareas y exámenes, así como ver un calendario y un cronograma con las fechas y horas de cada actividad. Usa HTML, CSS y React para el frontend, Node.js y Express para el backend, y MongoDB para la base de datos.",
-      imagen: "",
-      imagen2: "",
-      imagen3: "",
+      imagen3: portafolio3,
     },
   ];
   return (
@@ -67,6 +59,41 @@ const Proyecto = () => {
                 loading="lazy"
               />
             </div>
+
+            <dl className="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2">
+              <dt className="sr-only">Reviews</dt>
+              <dd className="text-indigo-600 flex items-center dark:text-indigo-400">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  aria-hidden="true"
+                  className="mr-1 stroke-current dark:stroke-indigo-500">
+                  <path
+                    d="m12 5 2 5h5l-4 4 2.103 5L12 16l-5.103 3L9 14l-4-4h5l2-5Z"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </dd>
+              <dt className="sr-only">Location</dt>
+              <dd className="flex items-center">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="mr-1 text-slate-400 dark:text-slate-500"
+                  aria-hidden="true">
+                  <path d="M18 11.034C18 14.897 12 19 12 19s-6-4.103-6-7.966C6 7.655 8.819 5 12 5s6 2.655 6 6.034Z" />
+                  <path d="M14 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
+                </svg>
+              </dd>
+            </dl>
 
             <div className="mt-4 text-sm col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
               algo

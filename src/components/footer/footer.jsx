@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="flex-1 flex flex-col justify-center items-start">
         <img className="h-10 w-auto" src={logojoa} alt="logojoa" />
         <p className="mt-8">
-          Te invito que tengamos una gran colaboración. Copyright 2023©
+          I invite you to have a great colaboration. Copyright 2023©
         </p>
         <ul className="flex list-none gap-5 mt-8 ">
           {contacto.map((a) => (

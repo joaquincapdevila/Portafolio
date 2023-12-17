@@ -1,18 +1,18 @@
 const descripciones = [
   {
     key: "exp",
-    titulo: "Experiencia",
-    desc: "Cada uno de ellos me ha permitido crecer y desarrollar nuevas habilidades. Aquí puedes ver algunos de los proyectos más destacados en los que he trabajado.",
+    titulo: "Experience",
+    desc: "I learn from my own projects, each of them has allowed me to grow and develop new skills. I hope to work in a company that offers me the opportunity to grow faster.",
   },
   {
     key: "webs",
-    titulo: "Desarrollo Web",
-    desc: "El desarrollo web es mi pasión. Aquí puedes ver algunos de mis trabajos más recientes y los lenguajes de programación que más disfruto usar.",
+    titulo: "Web Develoment",
+    desc: "I love entertaining Web projects with great design. Here you can see some of my most recent work and the programming languages I most enjoy using.",
   },
   {
     key: "estudios",
-    titulo: "Estudios",
-    desc: "Poseo una formación en Desarrollo FullStack Web. Actualmente, estoy cursando Ingeniería Industrial. Mi formación académica apunta hacia la tecnología y la lógica.",
+    titulo: "Studies",
+    desc: "I have training in FullStack Web Development. Currently, I am studying Industrial Engineering. My academic training focuses on technology and logic.",
   },
 ];
 

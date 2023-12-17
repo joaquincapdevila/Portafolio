@@ -6,8 +6,8 @@ import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Proyects", href: "/proyectos" },
-  { name: "Contact", href: "#" },
+  { name: "Proyects", href: "/proyects" },
+  { name: "Contact", href: "contact" },
 ];
 
 const Header = () => {
