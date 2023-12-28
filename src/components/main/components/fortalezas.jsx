@@ -57,11 +57,12 @@ const Fortalezas = () => {
           <h3 className="text-4xl font-bold tracking-tight text-gray-900 underline-offset-4">
             About Me
           </h3>
-          <p className="mt-6 text-sm md:text-base text-gray-600 ">
+          <p className="mt-6 text-sm md:text-base text-gray-600 w-5/6">
             I am an analytical and detailed person, which allows me identify
-            problems and find creative solutions effective. I like to work as a
-            team, share knowledge and learn from my colleagues, as I believe
-            that collaboration is fundamental to the success of any project.
+            problems and find creative and effective solutions. I like to work
+            as a team, share knowledge and learn from my colleagues, as I
+            believe that collaboration is fundamental to the success of any
+            project.
           </p>
 
           <h4 className="my-6 text-2xl font-bold tracking-tight text-gray-900 underline-offset-4">

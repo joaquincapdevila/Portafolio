@@ -1,5 +1,5 @@
 import portafolioimage from "../../../../public/works/portafolio.png";
-import portafolio2 from "../../../../public/works/portafolio_proyects.png";
+import portafolio2 from "../../../../public/works/portafolio2.png";
 import portafolio3 from "../../../../public/works/portafolio_contact.png";
 import weatherImage from "../../../../public/works/weather.png";
 import weatherImage2 from "../../../../public/works/weather2.png";

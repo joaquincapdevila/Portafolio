@@ -1,30 +1,8 @@
-import axios from "axios";
-import { useState } from "react";
-
-const Formulario = () => {
-  const [valorDelInput, setValorDelInput] = useState({
-    nombre: "",
-    email: "",
-    apodo: "",
-    about: "",
-  });
-
-  const manejarCambio = (e) => {
-    const identificador = e.target.id;
-    const newValue = e.target.value;
-    setValorDelInput({ ...valorDelInput, [identificador]: newValue });
-  };
-
-  const enviodeDatos = (e) => {
-    e.preventDefault();
-    axios.post("./#", valorDelInput);
-  };
-
+const Formulario = (manejarCambio, enviodeDatos) => {
   return (
     <section className="relative px-6 pt-14 z-20 dark:text-white">
       <div className="mx-auto max-w-4xl py-24 z-20">
         <form
-          action="#"
           method="post"
           className="px-6 pb-6 border border-viol bg-transparent rounded-3xl ">
           <div className="mt-10 mb-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
@@ -32,13 +10,13 @@ const Formulario = () => {
 
             <div className="sm:col-span-3">
               <label
-                htmlFor="nombre"
+                htmlFor="name"
                 className=" text-sm font-medium leading-6 text-gray-900">
                 Nombre de contacto
               </label>
               <div className="mt_2">
                 <input
-                  id="nombre"
+                  id="name"
                   type="text"
                   onChange={manejarCambio}
                   className=" w-full rounded-md  py-1.5 px-2 text-black-300 shadow-sm focus:ring-viol"
@@ -50,13 +28,13 @@ const Formulario = () => {
 
             <div className="sm:col-span-3">
               <label
-                htmlFor="apodo"
+                htmlFor="nickname"
                 className=" text-sm font-medium leading-6 text-gray-900">
                 Apodo
               </label>
               <div className="mt_2">
                 <input
-                  id="apodo"
+                  id="nickname"
                   type="text"
                   onChange={manejarCambio}
                   className=" w-full rounded-md  py-1.5 px-2 text-black-300 shadow-sm focus:ring-viol"
@@ -85,13 +63,13 @@ const Formulario = () => {
             {/* TEXT AREA INPUT */}
             <div className="sm:col-span-6 pb">
               <label
-                htmlFor="about"
+                htmlFor="bodyMessage"
                 className=" text-sm font-medium leading-6 text-gray-900">
                 Cuentame un poco sobre tu proyecto
               </label>
               <div className="mt_2">
                 <textarea
-                  id="about"
+                  id="bodyMessage"
                   type="text"
                   onChange={manejarCambio}
                   rows={3}

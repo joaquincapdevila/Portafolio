@@ -22,13 +22,24 @@ const contacto = [
 ];
 const Footer = () => {
   return (
-    <section className="w-full bg-dark-blue dark:text-white dark:bg-purple flex justify-center px-6 lg:px-8 pt-20 pb-9 shadow-2xl ">
-      <div className="flex-1 flex flex-col justify-center items-start">
-        <img className="h-10 w-auto" src={logojoa} alt="logojoa" />
-        <p className="mt-8">
-          I invite you to have a great colaboration. Copyright 2023©
+    <footer className="w-full bg-dark-blue dark:text-white dark:bg-purple flex justify-center px-6 lg:px-8 pt-20 pb-9 shadow-2xl ">
+      <div className="flex-1 flex flex-col justify-center md:flex-row md:justify-around items-start">
+        <img className="h-10 w-auto self-center" src={logojoa} alt="logojoa" />
+        <p className="mt-8 md:mt-0 md:self-center flex items-center">
+          © Copyright 2023
+          <span>
+            <svg
+              width="2"
+              height="2"
+              aria-hidden="true"
+              fill="currentColor"
+              className="mx-3 text-slate-300 self-center">
+              <circle cx="1" cy="1" r="1" />
+            </svg>
+          </span>
+          I invite you to have a great colaboration.
         </p>
-        <ul className="flex list-none gap-5 mt-8 ">
+        <ul className="flex list-none gap-5 mt-8 md:mt-0 md:self-center">
           {contacto.map((a) => (
             <li key={a.nombre}>
               <a
@@ -46,7 +57,7 @@ const Footer = () => {
           ))}
         </ul>
       </div>
-    </section>
+    </footer>
   );
 };
 
