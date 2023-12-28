@@ -2,12 +2,18 @@ import logojoa from "../../../public/logojoa.svg";
 import github from "../../../public/github.svg";
 import behance from "../../../public/behance.svg";
 import linkedin from "../../../public/linkedin.svg";
+import envelope from "../../../public/envelope.svg";
 
 const contacto = [
   {
     nombre: "Linkedin",
     svg: linkedin,
     href: "https://www.linkedin.com/in/joaquincapdevila/",
+  },
+  {
+    nombre: "email",
+    svg: envelope,
+    href: "mailto:joaquincapdeviladev@gmail.com",
   },
   {
     nombre: "Github",
@@ -33,11 +39,14 @@ const Footer = () => {
               height="2"
               aria-hidden="true"
               fill="currentColor"
-              className="mx-3 text-slate-300 self-center">
+              className="mx-3 text-slate-300 self-center hidden md:block">
               <circle cx="1" cy="1" r="1" />
             </svg>
           </span>
-          I invite you to have a great colaboration.
+          <span className="hidden md:block">
+            {" "}
+            I invite you to have a great colaboration.
+          </span>
         </p>
         <ul className="flex list-none gap-5 mt-8 md:mt-0 md:self-center">
           {contacto.map((a) => (

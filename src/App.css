@@ -774,6 +774,18 @@ video {
   height: 100vh;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -959,6 +971,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .gap-x-12 {
@@ -1171,6 +1187,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .pb-0 {

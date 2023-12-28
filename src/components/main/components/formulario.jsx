@@ -1,7 +1,7 @@
 const Formulario = (manejarCambio, enviodeDatos) => {
   return (
-    <section className="relative px-6 pt-14 z-20 dark:text-white">
-      <div className="mx-auto max-w-4xl py-24 z-20">
+    <section className="relative px-6 pt-14 z-20 dark:text-white flex justify-center items-center h-screen">
+      <div className="mx-auto z-20">
         <form
           method="post"
           className="px-6 pb-6 border border-viol bg-transparent rounded-3xl ">

@@ -4,24 +4,31 @@ import portafolio3 from "../../../../public/works/portafolio_contact.png";
 import weatherImage from "../../../../public/works/weather.png";
 import weatherImage2 from "../../../../public/works/weather2.png";
 import weatherImage3 from "../../../../public/works/weather3.png";
+import javaScript from "../../../../public/skills/js.png";
+import react from "../../../../public/skills/react.png";
+import tailwind from "../../../../public/skills/tailwind.png";
 
 const Proyecto = () => {
   const proyects = [
     {
+      idioma: "en",
       key: "weather",
       titulo: "Weather App",
       desc: "A web application that shows the weather in real time from anywhere in the world. Allows you to search by name, coordinates. It uses the OpenWeatherMap API to get the weather data and the Geolocation. It is developed with HTML, CSS and JavaScript, using the async/await method for asynchronous requests.",
       imagen: weatherImage,
       imagen2: weatherImage2,
       imagen3: weatherImage3,
+      lenguajes: [javaScript, react, tailwind],
     },
     {
+      idioma: "en",
       key: "webs",
       titulo: "Portfolio",
       desc: "A web portfolio that shows my projects, skills and contact. It has a responsive, modern and attractive design, with animation and transition effects. It uses HTML, CSS and Tailwind for layout, JavaScript for interactivity, and PHP and MySQL for the backend and database.",
       imagen: portafolioimage,
       imagen2: portafolio2,
       imagen3: portafolio3,
+      lenguajes: [javaScript, react, tailwind],
     },
   ];
   return (
@@ -36,7 +43,7 @@ const Proyecto = () => {
                 {datos.titulo}
               </h2>
               <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-                Api
+                {datos.idioma}
               </p>
             </div>
             <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
@@ -60,7 +67,7 @@ const Proyecto = () => {
               />
             </div>
 
-            <dl className="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2">
+            {/* <dl className="mt-4 text-xs font-medium flex items-center row-start-2 sm:mt-1 sm:row-start-3 md:mt-2.5 lg:row-start-2">
               <dt className="sr-only">Reviews</dt>
               <dd className="text-indigo-600 flex items-center dark:text-indigo-400">
                 <svg
@@ -93,11 +100,25 @@ const Proyecto = () => {
                   <path d="M14 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
                 </svg>
               </dd>
+            </dl> */}
+
+            <dl className="mt-4 text-sm font-medium flex col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
+              <dt className="sr-only">leguajes1</dt>
+              <dd className="flex items-center gap-12">
+                {datos.lenguajes &&
+                  datos.lenguajes.map((lenguaje, index) => {
+                    return (
+                      <img
+                        className="h-4"
+                        key={index}
+                        src={lenguaje}
+                        alt="svg lenguajes"
+                      />
+                    );
+                  })}
+              </dd>
             </dl>
 
-            <div className="mt-4 text-sm col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
-              algo
-            </div>
             <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">
               {datos.desc}
             </p>
