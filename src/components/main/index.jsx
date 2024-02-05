@@ -1,6 +1,8 @@
 // import Contacto from "./components/contacto";
 
 import { Outlet } from "react-router-dom";
+import AsideLeft from "./components/aside_left";
+import AsideRight from "./components/aside_right";
 // #7672f2 violeta
 // #383673 medio
 // #2d2f59 oscuro
@@ -9,8 +11,10 @@ import { Outlet } from "react-router-dom";
 
 const Main = () => {
   return (
-    <main className="flex flex-col justify-center items-stretch min-w-full bg-white dark:bg-dark-blue">
+    <main className="max-w-4xl mx-auto pt-20 pb-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:max-w-5xl lg:gap-x-6 lg:grid-cols-3 lg:px-4 dark:text-white gap-5 min-w-full bg-white dark:bg-dark-blue">
+      <AsideLeft />
       <Outlet />
+      <AsideRight />
     </main>
   );
 };

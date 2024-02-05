@@ -36,7 +36,7 @@ const Header = () => {
           </button>
         </div>
         {/* LINKS DE NAVEGACIÓN */}
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 px-6 py-1 bg-silver/5 rounded-2xl shadow-3xl">
           {navigation.map((item) => (
             <NavLink
               key={item.name}
