@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Esto afectará a todas las barras de desplazamiento dentro del cuerpo del documento */
+body::-webkit-scrollbar {
+  width: 3px;
+  display: hidden; /* Ancho de la barra de desplazamiento */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo de la barra */
+  border-radius: 16px; /* Bordes redondeados */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #726eff; /* Color de la barra de desplazamiento */
+  border-radius: 16px; /* Bordes redondeados */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color de la barra de desplazamiento al pasar el mouse */
+}

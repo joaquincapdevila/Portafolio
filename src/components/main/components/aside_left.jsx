@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logojoa from "../../../../public/img_joaco.png";
+
 import github from "../../../../public/github.svg";
 import behance from "../../../../public/behance.svg";
 import linkedin from "../../../../public/linkedin.svg";
@@ -34,8 +34,8 @@ const rrss = [
 
 const AsideLeft = () => {
   return (
-    <aside className="bg-viol/20 p-3 h-screen rounded-xl relative col-start-1 row-start-1 lg:col-span-2 overflow-auto">
-      <header className="flex flex-col h-full">
+    <aside className="bg-viol/20 p-3 h-screen rounded-xl relative col-start-1 row-start-1 lg:col-span-3 overflow-auto">
+      <header className="flex flex-col h-full transition-colors">
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold leading-4 -tracking-tight text-gray-900 mt-5">
             <NavLink to="/" className="">
@@ -48,12 +48,33 @@ const AsideLeft = () => {
           <p className="mt-4 max-w-xs leading-normal">
             I build pixel-perfect, engaging, and accessible digital experiences.
           </p>
-          <nav></nav>
+          <nav className="h-9 bg-white/5 hover:bg-white/10 mt-6 flex items-center rounded-3xl">
+            <div className="flex items-center justify-between w-full px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 p-1 bg-white/10 rounded-full hover:bg-white/20 ">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+              <input
+                type="text"
+                className="bg-white/5 border border-spacing-1 border-viol rounded-full w-4/5"
+              />
+              <h5 className="text-sm mr-2">Redes</h5>
+            </div>
+          </nav>
         </div>
         <ul className="flex flex-col gap-1 mt-6">
           {rrss.map((a) => (
             <li
-              className="w-full h-16 px-3 hover:bg-dark-blue/20 rounded-lg "
+              className="w-full h-16 px-3 hover:bg-white/10 rounded-lg "
               key={a.nombre}>
               <a
                 href={a.href}

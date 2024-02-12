@@ -12,17 +12,18 @@ module.exports = {
       body: ['"Open Sans"'],
     },
     colors: {
-      "dark-blue": "#171b26",
+      black: { 100: "232323", 200: "#37465B", 300: "#1a1a1a", 600: "#020202" },
+      white: "#e4e4e4",
+      gris: "#6e7073",
+
       "regal-blue": "#1c3659",
+      "dark-blue": "#171b26",
       purple: "#3f3cbb",
       viol: "#726EFF",
       vrac: "#5AFFE7",
       baige: "#08C6AB",
       transparent: "transparent",
       current: "currentColor",
-      white: "#cfcfaf",
-      black: { 100: "232323", 200: "#37465B", 300: "#212B38" },
-      gris: "#6e7073",
       midnight: "#121063",
       metal: "#565584",
       tahiti: {
