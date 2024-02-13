@@ -16,6 +16,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #726eff; /* Color de la barra de desplazamiento */
   border-radius: 16px; /* Bordes redondeados */
+  height: 3px;
 }
 
 body::-webkit-scrollbar-thumb:hover {

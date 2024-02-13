@@ -3,6 +3,7 @@ import github from "../../../public/github.svg";
 import behance from "../../../public/behance.svg";
 import linkedin from "../../../public/linkedin.svg";
 import envelope from "../../../public/envelope.svg";
+import { NavLink } from "react-router-dom";
 
 const contacto = [
   {
@@ -30,7 +31,14 @@ const Footer = () => {
   return (
     <footer className="w-full bg-dark-blue dark:text-white dark:bg-purple flex justify-center px-6 lg:px-8 py-6 shadow-2xl ">
       <div className="flex-1 flex flex-col justify-center md:flex-row md:justify-around items-start">
-        <img className="h-10 w-auto self-center" src={logojoa} alt="logojoa" />
+        <NavLink to="/" className="">
+          <img
+            className="h-10 w-auto self-center"
+            src={logojoa}
+            alt="logojoa"
+          />
+        </NavLink>
+
         <p className="mt-8 md:mt-0 md:self-center flex items-center">
           © Copyright 2023
           <span>
