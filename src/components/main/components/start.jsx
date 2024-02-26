@@ -9,15 +9,15 @@ export const Start = () => {
           <img src={img_joaco} alt="joaquin" className="cover" />
         </div>
         {/* TEXTO */}
-        <div className="flex-1 flex-col h-full justify-between">
-          <h1 className="text-lg font-bold tracking-tight text-gray-900 sm:text-6xl animate-fade mt-6">
+        <div className="flex-1 flex-col h-full justify-between animate-fade2">
+          <h1 className="text-lg font-bold tracking-tight text-gray-900 sm:text-6xl mt-6">
             Sobre mí
           </h1>
           <div className="flex items-center gap-3 mt-4">
             <div className="w-6 h-6 rounded-full overflow-hidden bg-baige">
               <img src={img_joaco} alt="joaquin" className="cover" />
             </div>
-            <h5 className="text-xs font-semibold tracking-tight text-gray-900 animate-fade flex gap-2 flex-wrap">
+            <h5 className="text-xs font-semibold tracking-tight text-gray-900 flex gap-2 flex-wrap">
               <span>Joaquin Capdevila</span> • <span>1 me gusta</span> •{" "}
               <span>9 canciones</span>, <span>400 h 50 min</span>
             </h5>

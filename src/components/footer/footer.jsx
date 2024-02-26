@@ -29,7 +29,7 @@ const contacto = [
 ];
 const Footer = () => {
   return (
-    <footer className="w-full bg-dark-blue dark:text-white dark:bg-purple flex justify-center px-6 lg:px-8 py-6 shadow-2xl ">
+    <footer className="w-full absolute inset-x-0 bg-dark-blue dark:text-white dark:bg-purple flex justify-center px-6 lg:px-8 py-6 shadow-2xl ">
       <div className="flex-1 flex flex-col justify-center md:flex-row md:justify-around items-start">
         <NavLink to="/" className="">
           <img
