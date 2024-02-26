@@ -11,7 +11,7 @@ import Proyecto from "../components/proyecto";
 
 const Proyectos = () => {
   return (
-    <section className="bg-gradient-to-bl from-purple to-black-300 h-screen rounded-xl relative p-3 col-start-1 row-start-1 sm:col-start-2 sm:row-start-1 lg:col-span-6 lg:col-start-3 overflow-auto scrollbar-none">
+    <section className="transition-all duration-500 ease-in-out bg-gradient-to-tr from-purple/60 to-black-300 h-screen rounded-xl relative p-3 col-start-1 row-start-1 sm:col-start-2 sm:col-span-7 md:col-start-3 md:col-span-4 lg:col-span-6 lg:col-start-3 overflow-auto scrollbar-none">
       <Proyecto />
     </section>
   );

@@ -64,14 +64,15 @@ module.exports = {
         "100%": { opacity: "1" },
       },
       fadeToRight: {
-        "0%": { transform: "translateX(-7.125rem)", opacity: "0" },
+        "0%": { transform: "translateX(7.125rem)", opacity: "0" },
         "100%": { transform: "translateX(0)" },
       },
     },
     animation: {
-      fade: "fade 1.3s ease-in-out",
+      fade: "fade 0.3s ease-in-out",
       fade1: "fade 2s ease-in-out",
       fade2: "fade 3s ease-in-out",
+      fadeToRight: "fadeToRight 1.3s ease-in-out",
     },
     boxShadow: {
       "3xl": " -5px -6px -1px rgba(0, 0, 0, 1)",

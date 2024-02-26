@@ -1,6 +1,6 @@
 const Formulario = (manejarCambio, enviodeDatos) => {
   return (
-    <section className="bg-gradient-to-bl from-purple to-black-300 h-screen rounded-xl relative p-3 col-start-1 row-start-1 sm:col-start-2 sm:row-start-1 lg:col-span-6 lg:col-start-3 overflow-auto scrollbar-none flex justify-center items-center">
+    <section className="transition-all duration-500 ease-in-out bg-gradient-to-tr from-purple/60 to-black-300 h-screen rounded-xl relative p-3 col-start-1 row-start-1 sm:col-start-2 sm:col-span-7 md:col-start-3 md:col-span-4 lg:col-span-6 lg:col-start-3 overflow-auto scrollbar-none flex justify-center items-center">
       <div className="z-20 w-11/12">
         <form
           method="post"
@@ -77,18 +77,25 @@ const Formulario = (manejarCambio, enviodeDatos) => {
               </div>
             </div>
           </div>
-          <div className="flex justify-end items-center gap-4">
-            <button
-              type="button"
-              className="rounded-md  px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gris">
-              Cancelar
-            </button>
-            <button
-              type="submit"
-              onClick={enviodeDatos}
-              className="rounded-md bg-purple px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-viol">
-              Ennviar
-            </button>
+          <div className="flex justify-between items-center">
+            <div>
+              <span className="text-xs px-1">
+                joaquincapdeviladev@gmail.com
+              </span>
+            </div>
+            <div>
+              <button
+                type="button"
+                className="rounded-md  px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gris">
+                Cancelar
+              </button>
+              <button
+                type="submit"
+                onClick={enviodeDatos}
+                className="rounded-md bg-purple px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-viol">
+                Ennviar
+              </button>
+            </div>
           </div>
         </form>
       </div>
