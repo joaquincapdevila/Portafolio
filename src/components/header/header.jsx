@@ -15,43 +15,47 @@ const Header = () => {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50 dark:text-white">
-      <nav
-        className="flex items-center justify-between p-6 lg:px-8"
-        aria-label="Global">
-        {/* LOGOTIPO PERSONAL */}
-        <div className="flex lg:flex-1">
-          <NavLink to="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">My Brand</span>
-            <img className="h-8 w-auto" src={logojoa} alt="logojoa" />
-          </NavLink>
+      <div className="" aria-label="Global">
+        <div className="pt-4 w-full flex items-center justify-center">
+          <div className="w-11/12 flex justify-center">
+            <div className="flex justify-between w-full">
+              {/* LOGOTIPO PERSONAL */}
+              <div className="flex lg:flex-1">
+                <NavLink to="/" className="-m-1.5 p-1.5">
+                  <span className="sr-only">My Brand</span>
+                  <img className="h-8 w-auto" src={logojoa} alt="logojoa" />
+                </NavLink>
+              </div>
+              {/* BOTON DE MENU EN CELULAR */}
+              <div className="flex md:hidden">
+                <button
+                  type="button"
+                  className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                  onClick={() => setMobileMenuOpen(true)}>
+                  <span className="sr-only">Open main menu</span>
+                  <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                </button>
+              </div>
+              {/* LINKS DE NAVEGACIÓN */}
+              <div className="hidden md:flex md:gap-x-12 px-6 py-1 bg-silver/5 rounded-2xl shadow-3xl">
+                {navigation.map((item) => (
+                  <NavLink
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-gray-900 hover:scale-110 transition-transform">
+                    {item.name}
+                  </NavLink>
+                ))}
+              </div>
+              <div className="hidden md:flex lg:flex-1 lg:justify-end"></div>
+            </div>
+          </div>
         </div>
-        {/* BOTON DE MENU EN CELULAR */}
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            onClick={() => setMobileMenuOpen(true)}>
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-          </button>
-        </div>
-        {/* LINKS DE NAVEGACIÓN */}
-        <div className="hidden lg:flex lg:gap-x-12 px-6 py-1 bg-silver/5 rounded-2xl shadow-3xl">
-          {navigation.map((item) => (
-            <NavLink
-              key={item.name}
-              to={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 hover:scale-110 transition-transform">
-              {item.name}
-            </NavLink>
-          ))}
-        </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
-      </nav>
+      </div>
 
       <Dialog
         as="div"
-        className="lg:hidden animate-fade"
+        className="md:hidden animate-fade"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />

@@ -1,6 +1,6 @@
 const Formulario = (manejarCambio, enviodeDatos) => {
   return (
-    <section className="transition-all duration-500 ease-in-out bg-gradient-to-tr from-purple/60 to-black-300 h-screen rounded-xl relative p-3 col-start-1 row-start-1 sm:col-start-2 sm:col-span-7 md:col-start-3 md:col-span-4 lg:col-span-6 lg:col-start-3 overflow-auto scrollbar-none flex justify-center items-center">
+    <section className="transition-all duration-500 ease-in-out h-screen rounded-xl relative p-3 col-start-1 row-start-1 sm:col-start-2 sm:col-span-7 md:col-start-3 md:col-span-4 lg:col-span-6 lg:col-start-3 overflow-auto scrollbar-none flex justify-center items-center">
       <div className="z-20 w-11/12">
         <form
           method="post"
