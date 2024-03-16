@@ -5,7 +5,7 @@ function Inicio() {
   return (
     <div className="transition-all duration-500 ease-in-out md:rounded-xl relative p-3 col-start-1 row-start-1 sm:col-start-2 sm:col-span-7 md:col-start-3 md:col-span-4 lg:col-span-6 lg:col-start-3 md:overflow-auto scrollbar-none">
       <Start />
-      <section className="py-16 px-4 sm:p-6 md:px-8 m-auto">
+      <section className="mt-16 px-4 sm:p-6 md:px-8 m-auto">
         <div className="max-w-4xl lg:max-w-5xl mx-auto">
           Back in 2012, I decided to try my hand at creating custom Tumblr
           themes and tumbled head first into the rabbit hole of coding and web

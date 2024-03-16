@@ -34,7 +34,7 @@ const rrss = [
 
 const AsideLeft = () => {
   return (
-    <aside className="transition-all duration-500 ease-in-out rounded-xl bg-gradient-to-tl from-purple/50 to-black-300 relative overflow-auto row-start-2 sm:row-start-1 sm:col-start-1 md:col-start-1 md:col-span-2">
+    <aside className="transition-all duration-500 ease-in-out rounded-xl bg-gradient-to-tl from-purple/50 to-black-300 relative overflow-auto row-start-2 sm:row-start-1 sm:col-start-1 md:col-start-1 md:col-span-2 px-3">
       <header className="flex flex-col h-full transition-colors">
         <div className="sm:hidden md:block">
           <h1 className="text-4xl md:text-5xl  font-bold leading-4 -tracking-tight text-gray-900 mt-5">
