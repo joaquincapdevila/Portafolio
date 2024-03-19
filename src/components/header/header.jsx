@@ -42,7 +42,8 @@ const Header = () => {
                   <NavLink
                     key={item.name}
                     to={item.href}
-                    className="text-sm font-semibold leading-6 text-gray-900 hover:scale-110 transition-transform">
+                    className={`text-sm font-semibold leading-6 text-gray-900 hover:scale-110 transition-transform
+                    ${item.name === "Contact" ? "hidden" : "felx"}`}>
                     {item.name}
                   </NavLink>
                 ))}
@@ -59,7 +60,7 @@ const Header = () => {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 top-0 right-0 z-50 w-screen overflow-y-auto bg-viol px-6 py-6 max-h-72 overflow-auto">
+        <Dialog.Panel className="fixed inset-y-0 top-0 right-0 z-50 w-screen overflow-y-auto bg-gradient-to-t from-purple/50 to-black-300 text-white px-6 py-6 max-h-72 overflow-auto">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Logo Personal</span>

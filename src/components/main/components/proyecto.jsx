@@ -20,8 +20,9 @@ const Proyecto = () => {
     {
       idioma: "en",
       key: "function",
-      titulo: "Introducing Animaginary: High performance web animations",
-      desc: "A web application that shows the weather in real time from anywhere in the world. Allows you to search by name, coordinates. It uses the OpenWeatherMap API to get the weather data and the Geolocation. It is developed with HTML, CSS and JavaScript, using the async/await method for asynchronous requests.",
+      titulo:
+        "Bouwer Cultura: Una web cultural basda en la estética del pueblo",
+      desc: "Una aplicación web que se centra en la difusión de la cultura local en tiempo real. Permite a los usuarios explorar y descubrir diversas formas de arte, literatura, música, historia y más, de todas partes del mundo. Utiliza la API de OpenCultureMap para obtener datos culturales y la Geolocalización para sugerir contenido basado en la ubicación del usuario.",
       //   imagen: weatherImage,
       //   imagen2: weatherImage2,
       //   imagen3: weatherImage3,
@@ -31,8 +32,8 @@ const Proyecto = () => {
     {
       idioma: "en",
       key: "webs",
-      titulo: "Crafting a design system for a multiplanetary future",
-      desc: "A web portfolio that shows my projects, skills and contact. It has a responsive, modern and attractive design, with animation and transition effects. It uses HTML, CSS and Tailwind for layout, JavaScript for interactivity, and PHP and MySQL for the backend and database.",
+      titulo: "Valeria´s Web",
+      desc: "A web portfolio that shows Valeria's projects, skills and contact. It has a responsive, modern and attractive design, with animation and transition effects. It uses HTML, CSS and Tailwind for layout, JavaScript for interactivity, and PHP and MySQL for the backend and database.",
       //   imagen: portafolioimage,
       //   imagen2: portafolio2,
       //   imagen3: portafolio3,

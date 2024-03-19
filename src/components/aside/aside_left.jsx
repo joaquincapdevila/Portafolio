@@ -38,11 +38,12 @@ const AsideLeft = () => {
       <header className="flex flex-col h-full transition-colors">
         <div className="sm:hidden md:block">
           <h1 className="text-4xl md:text-5xl  font-bold leading-4 -tracking-tight text-gray-900 mt-5">
-            <NavLink to="/" className="">
-              FullStack
+            <NavLink to="/" className="flex flex-col lg:flex-row">
+              <span className="leading-10">Full</span>
+              <span>Stack</span>
             </NavLink>
           </h1>
-          <h2 className="text-2xl font-semibold leading-6 text-gray-900 -tracking-tight mt-3">
+          <h2 className="text-2xl font-semibold text-gray-900 mt-5 md:mt-3">
             Lead Engineer at Upstatement
           </h2>
           <p className="mt-4 max-w-xs leading-normal">

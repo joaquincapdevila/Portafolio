@@ -7,25 +7,25 @@ function Inicio() {
       <Start />
       <section className="mt-16 px-4 sm:p-6 md:px-8 m-auto">
         <div className="max-w-4xl lg:max-w-5xl mx-auto">
-          Back in 2012, I decided to try my hand at creating custom Tumblr
-          themes and tumbled head first into the rabbit hole of coding and web
-          development. Fast-forward to today, and I’ve had the privilege of
-          building software for an advertising agency, a start-up, a student-led
-          design studio, and a huge corporation. <br /> <br /> My main focus
-          these days is building products and leading projects for our clients
-          at Upstatement. I most enjoy building software in the sweet spot where
-          design and engineering meet — things that look good but are also built
-          well under the hood. In my free time, Ive also released an online
-          video course that covers everything you need to know to build a web
-          app with the Spotify API. <br />
-          <br /> When I’m not at the computer, I’m usually rock climbing,
-          reading, hanging out with my wife and two cats, or running around
-          Hyrule searching for Korok seeds K o r o k s e e d s .
+          ¡Hola! Mi nombre es Joaquín Capdevila. Soy un individuo comprometido y
+          dedicado, siempre buscando oportunidades para crecer y aprender.
+          Actualmente, estoy cursando estudios en ingeniería y estoy en busca de
+          un empleo que me permita continuar con mi formación académica.. <br />{" "}
+          <br /> Creo firmemente en la responsabilidad y la ética en el trabajo,
+          y me esfuerzo por incorporar estos valores en todas las tareas que
+          realizo. Soy consciente de que cada experiencia laboral es una
+          oportunidad para adquirir nuevas habilidades y conocimientos, y estoy
+          dispuesto a asumir cualquier desafío que se presente. <br />
+          <br /> Mi objetivo es encontrar un lugar de trabajo que valore la
+          innovación y el crecimiento personal y profesional. Un lugar donde
+          pueda aplicar mis habilidades y conocimientos actuales, al mismo
+          tiempo que me brinde la oportunidad de aprender y desarrollarme aún
+          más...
         </div>
       </section>
-      <section className=" py-16 px-4 sm:p-6 md:px-8 m-auto">
+      {/* <section className=" py-16 px-4 sm:p-6 md:px-8 m-auto">
         experience
-      </section>
+      </section> */}
       <Proyecto />
     </div>
   );
