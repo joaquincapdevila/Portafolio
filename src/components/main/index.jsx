@@ -1,15 +1,8 @@
-// import Contacto from "./components/contacto";
-
 import { Outlet } from "react-router-dom";
-// #7672f2 violeta
-// #383673 medio
-// #2d2f59 oscuro
-// #6e7073 gris
-// #f2f2f2 blanco
 
 const Main = () => {
   return (
-    <main className="flex flex-col justify-center items-stretch min-w-full bg-white dark:bg-dark-blue">
+    <main className="transition-all duration-500 ease-in-out rounded-xl bg-gradient-to-tr from-purple/60 to-black-300 relative overflow-auto sm:col-start-2 md:col-start-3 md:col-span-6">
       <Outlet />
     </main>
   );

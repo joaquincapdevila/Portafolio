@@ -1,14 +1,13 @@
 const Formulario = (manejarCambio, enviodeDatos) => {
   return (
-    <section className="relative px-6 pt-14 z-20 dark:text-white flex justify-center items-center h-screen">
-      <div className="mx-auto z-20">
+    <section className="transition-all duration-500 ease-in-out h-screen rounded-xl relative p-3 col-start-1 row-start-1 sm:col-start-2 sm:col-span-7 md:col-start-3 md:col-span-4 lg:col-span-6 lg:col-start-3 overflow-auto scrollbar-none flex justify-center items-center">
+      <div className="z-20 w-11/12">
         <form
           method="post"
           className="px-6 pb-6 border border-viol bg-transparent rounded-3xl ">
-          <div className="mt-10 mb-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div className="py-10 m-auto grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* NOMBRE INPUT */}
-
-            <div className="sm:col-span-3">
+            <div className="md:col-span-1">
               <label
                 htmlFor="name"
                 className=" text-sm font-medium leading-6 text-gray-900">
@@ -26,7 +25,7 @@ const Formulario = (manejarCambio, enviodeDatos) => {
 
             {/* APODO INPUT */}
 
-            <div className="sm:col-span-3">
+            <div className="md:col-span-1">
               <label
                 htmlFor="nickname"
                 className=" text-sm font-medium leading-6 text-gray-900">
@@ -44,7 +43,7 @@ const Formulario = (manejarCambio, enviodeDatos) => {
 
             {/* EMAIL INPUT */}
 
-            <div className="sm:col-span-5">
+            <div className="md:col-span-2">
               <label
                 htmlFor="email"
                 className=" text-sm font-medium leading-6 text-gray-900">
@@ -61,7 +60,7 @@ const Formulario = (manejarCambio, enviodeDatos) => {
               </div>
             </div>
             {/* TEXT AREA INPUT */}
-            <div className="sm:col-span-6 pb">
+            <div className="md:col-span-2 pb">
               <label
                 htmlFor="bodyMessage"
                 className=" text-sm font-medium leading-6 text-gray-900">
@@ -78,18 +77,25 @@ const Formulario = (manejarCambio, enviodeDatos) => {
               </div>
             </div>
           </div>
-          <div className="flex justify-end items-center gap-4">
-            <button
-              type="button"
-              className="rounded-md  px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gris">
-              Cancelar
-            </button>
-            <button
-              type="submit"
-              onClick={enviodeDatos}
-              className="rounded-md bg-purple px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-viol">
-              Ennviar
-            </button>
+          <div className="flex justify-between items-center">
+            <div>
+              <span className="text-xs px-1">
+                joaquincapdeviladev@gmail.com
+              </span>
+            </div>
+            <div>
+              <button
+                type="button"
+                className="rounded-md  px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gris">
+                Cancelar
+              </button>
+              <button
+                type="submit"
+                onClick={enviodeDatos}
+                className="rounded-md bg-purple px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-viol">
+                Ennviar
+              </button>
+            </div>
           </div>
         </form>
       </div>
