@@ -1,4 +1,3 @@
-import logojoa from "../../../public/logojoa.svg";
 import github from "../../../public/github.svg";
 import behance from "../../../public/behance.svg";
 import linkedin from "../../../public/linkedin.svg";
@@ -29,47 +28,19 @@ const contacto = [
 ];
 const Footer = () => {
   return (
-    <footer className="w-full absolute inset-x-0 dark:text-white bg-black-600 flex justify-center px-6 lg:px-8 py-6 shadow-2xl ">
-      <div className="flex-1 flex flex-col justify-center md:flex-row md:justify-around items-start">
-        <NavLink to="/" className="">
-          <img
-            className="h-10 w-auto self-center"
-            src={logojoa}
-            alt="logojoa"
-          />
-        </NavLink>
-
-        <p className="mt-8 md:mt-0 md:self-center flex items-center">
-          © Copyright 2023
-          <span>
-            <svg
-              width="2"
-              height="2"
-              aria-hidden="true"
-              fill="currentColor"
-              className="mx-3 text-slate-300 self-center hidden md:block">
-              <circle cx="1" cy="1" r="1" />
-            </svg>
-          </span>
-          <span className="hidden md:block">
-            {" "}
-            I invite you to have a great colaboration.
-          </span>
-        </p>
-        <ul className="flex list-none gap-5 mt-8 md:mt-0 md:self-center">
-          {contacto.map((a) => (
-            <li key={a.nombre}>
-              <a
-                href={a.href}
-                className="hover:scale-110 transition-transform"
-                target="_blank"
-                rel="noopener noreferrer">
-                <img
-                  src={a.svg}
-                  alt={a.nombre}
-                  className="h-6 hover:scale-110 transition-transform"
-                />
-              </a>
+    <footer className="rounded-lg shadow dark:bg-gray-800 max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl dark:text-white px-5 bg-white/5 hover:bg-white/10 shadow-md p-4 bg-royal/10">
+      <div className="w-full mx-auto max-w-screen-xl md:flex md:items-center md:justify-between">
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2023 . All Rights Reserved.
+        </span>
+        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          {contacto.map((datos) => (
+            <li key={datos.nombre}>
+              <NavLink
+                href={datos.href}
+                className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
+                <img src={datos.svg} alt={datos.nombre} />
+              </NavLink>
             </li>
           ))}
         </ul>
