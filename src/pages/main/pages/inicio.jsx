@@ -15,6 +15,7 @@ function Inicio() {
       <section className="py-16 px-4 sm:p-6 md:px-8 m-auto">
         <Blockquote />
       </section>
+
       <section className="min-h-screen py-16 px-4 sm:p-6 md:px-8 m-auto">
         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl dark:text-white rounded-xl px-5 py-7  transition-colors bg-white/5 hover:bg-white/10 shadow-md">
           <h4 className="text-2xl font-bold dark:text-white mb-12">

@@ -11,7 +11,7 @@ const Blockquote = () => {
       </svg>
       <blockquote>
         <p className="text-2xl italic font-medium text-gray-900 dark:text-white">
-          &quot;Keep It Simple, Stupid.&quot;
+          &quot;Mantenlo Simple.&quot;
         </p>
       </blockquote>
       <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
