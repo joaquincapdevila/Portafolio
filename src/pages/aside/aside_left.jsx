@@ -41,10 +41,9 @@ const AsideLeft = () => {
           {rrss.map((a) => (
             <li key={a.nombre}>
               <NavLink
-                href={a.href}
+                to={a.href}
                 className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
-                <img src={a.svg} alt="" />
-
+                <img src={a.svg} alt={a.nombre} />
                 <span className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">
                   {a.nombre}
                 </span>
