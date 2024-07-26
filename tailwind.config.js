@@ -6,7 +6,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       sans: ["Mooli", "ui-sans-serif", "system-ui"],
-      serif: ["ui-serif", "Georgia"],
+      serif: ["Source Code Pro", "ui-serif", "Georgia"],
       mono: ["ui-monospace", "SFMono-Regular"],
       display: ["Bebas Neue", "Oswald"],
       body: ['"Open Sans"'],
@@ -39,6 +39,7 @@ module.exports = {
       transparent: "transparent",
     },
     borderRadius: {
+      xxl: `calc(var(--radius) + 20px)`,
       xl: `calc(var(--radius) + 4px)`,
       lg: `var(--radius)`,
       md: `calc(var(--radius) - 2px)`,

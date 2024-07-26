@@ -1,13 +1,13 @@
 const NormalText = () => {
   return (
-    <section className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl dark:text-white rounded-xl px-5 py-7  transition-colors bg-white/5 hover:bg-white/10 shadow-md">
-      <p className="mb-3 text-gray-500 dark:text-gray-400">
+    <section className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl dark:text-white rounded-xl px-5 py-7  transition-colors bg-white/5 hover:bg-white/10 shadow-md leading-7">
+      <p className="mb-5 text-gray-500 dark:text-gray-400">
         Soy un apasionado desarrollador Full Stack con experiencia en la
         creación de aplicaciones web. Mi formación académica y proyectos
         prácticos me han permitido adquirir habilidades en una variedad de
         tecnologías.
       </p>
-      <p className="mb-3 text-gray-500 dark:text-gray-400">
+      <p className="mb-5 text-gray-500 dark:text-gray-400">
         Mi enfoque se centra en el desarrollo de aplicaciones web utilizando
         React y Next.js. Estas tecnologías me permiten crear interfaces de
         usuario dinámicas y escalables, así como optimizar el rendimiento del
