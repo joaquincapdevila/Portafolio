@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed z-50 md:relative flex justify-center items-center transition-all duration-500 ease-in-out rounded-xl row-start-1 sm:col-start-3 md:col-span-1   md:max-w-fit justify-self-end">
+    <header className="fixed z-50 md:relative flex justify-center items-center transition-all duration-500 ease-in-out rounded-xl row-start-1 sm:col-start-3 md:col-span-1 md:max-w-fit justify-self-end">
       <div
         className="w-full flex items-center justify-center md:bg-blue rounded-xl px-3 md:py-8"
         aria-label="Global">
@@ -30,7 +30,7 @@ const Header = () => {
           <div className="flex md:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-6 text-gray-700"
               onClick={handlerNav}>
               <span className="sr-only">Open main menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
