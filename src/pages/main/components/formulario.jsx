@@ -91,7 +91,6 @@ const Formulario = (manejarCambio, enviodeDatos) => {
               </button>
               <button
                 type="submit"
-                onClick={enviodeDatos}
                 className="rounded-md bg-purple px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-viol">
                 Ennviar
               </button>

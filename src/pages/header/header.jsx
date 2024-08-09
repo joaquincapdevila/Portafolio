@@ -3,48 +3,57 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logojoa from "../../../public/logojoa.svg";
 import { NavLink } from "react-router-dom";
-import github from "../../../public/github.svg";
-import behance from "../../../public/behance.svg";
-import envelope from "../../../public/envelope.svg";
-
+import casa from "../../../public/casa.svg";
+import contacto from "../../../public/contacto.svg";
+import proyectos from "../../../public/proyectos.svg";
 const navigation = [
-  { nombre: "Home", href: "/", svg: envelope },
-  { nombre: "Proyects", href: "/proyects", svg: behance },
-  { nombre: "Contact", href: "/contact", svg: github },
+  { nombre: "Home", href: "/", svg: casa },
+  { nombre: "Proyects", href: "/proyects", svg: proyectos },
+  { nombre: "Contact", href: "/contact", svg: contacto },
 ];
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const handlerNav = () => {
+    mobileMenuOpen !== true
+      ? setMobileMenuOpen(true)
+      : setMobileMenuOpen(false);
+  };
 
   return (
-    <header className="transition-all duration-500 ease-in-out rounded-xl bg-gradient-to-tl from-purple/50 to-black-300 absolute z-50 p-6 right-0 md:top-1/2 md:h-3/6 md:transform md:-translate-y-1/2 md:px-3 md:bg-blue">
+    <header className="transition-all duration-500 ease-in-out rounded-xl absolute z-50 p-6 right-0 me-4 md:top-1/2 md:h-3/6 md:transform md:-translate-y-1/2 md:px-3 md:bg-blue">
       <div
         className="w-full h-full flex items-center justify-center"
         aria-label="Global">
-        <div className="flex w-full">
+        <div className="w-full">
           {/* BOTON DE MENU EN CELULAR */}
           <div className="flex md:hidden">
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(true)}>
+              onClick={handlerNav}>
               <span className="sr-only">Open main menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           {/* LINKS DE NAVEGACIÓN */}
-          <div className="hidden md:flex md:flex-col md:gap-x-12 bg-silver/5 rounded-2xl shadow-3xl text-center">
-            {navigation.map((item) => (
-              <NavLink
-                key={item.nombre}
-                to={item.href}
-                className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700">
-                <img src={item.svg} alt={item.nombre} />
-                <span className="invisible absolute start-full top-1/2 me-4 translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">
-                  {item.nombre}
-                </span>
-              </NavLink>
-            ))}
+          <div className="hidden md:flex md:flex-col md:gap-y-12 md:h-full transition-colors md:justify-center">
+            <ul className="flex sm:flex-col gap-3 sm:mt-6 justify-center items-center">
+              {navigation.map((item) => (
+                <li key={item.nombre}>
+                  <NavLink
+                    to={item.href}
+                    className={`group relative flex justify-center rounded px-1 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700 ${
+                      item.nombre === "Contact" ? "hidden" : ""
+                    }`}>
+                    <img src={item.svg} alt={item.nombre} />
+                    <span className="invisible absolute end-full top-1/2 me-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible">
+                      {item.nombre}
+                    </span>
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
@@ -64,7 +73,7 @@ const Header = () => {
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(false)}>
+              onClick={handlerNav}>
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
@@ -76,6 +85,7 @@ const Header = () => {
                   <NavLink
                     key={item.nombre}
                     to={item.href}
+                    onClick={handlerNav}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                     {item.nombre}
                   </NavLink>

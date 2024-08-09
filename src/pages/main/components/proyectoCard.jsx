@@ -44,7 +44,7 @@ const Proyecto = () => {
       {proyect.map((datos) => (
         <li
           key={datos.titulo}
-          className="max-w-4xl w-full mx-auto grid grid-cols-1 lg:max-w-5xl dark:text-white rounded-xl px-5 py-7  transition-colors bg-white/5 hover:bg-white/10 shadow-md bg-royal/10">
+          className="max-w-4xl w-full mx-auto grid grid-cols-1 lg:max-w-5xl dark:text-white rounded-xl px-5 py-7  transition-colors bg-white/5 hover:bg-white/10 hover:cursor-pointer shadow-md bg-royal/10">
           <a
             href={datos.href}
             rel="noreferrer"
