@@ -35,7 +35,7 @@ const rrss = [
 
 const AsideLeft = () => {
   return (
-    <aside className="transition-all duration-500 ease-in-out rounded-xl bg-gradient-to-tl from-purple/50 to-black-300 relative  row-start-2 sm:row-start-1 sm:col-start-1 md:col-start-1 md:col-span-1 px-3 bg-blue">
+    <aside className="transition-all duration-500 ease-in-out rounded-xl bg-gradient-to-tl from-purple/50 to-black-300 relative  row-start-2 sm:row-start-1 sm:col-start-1 md:col-start-1 md:col-span-1 px-3 bg-blue md:max-w-fit">
       <header className="flex flex-col h-full transition-colors justify-center ">
         <ul className="flex sm:flex-col gap-3 sm:mt-6 justify-center items-center">
           {rrss.map((a) => (

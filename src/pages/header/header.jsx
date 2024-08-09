@@ -21,9 +21,9 @@ const Header = () => {
   };
 
   return (
-    <header className="transition-all duration-500 ease-in-out rounded-xl absolute z-50 p-6 right-0 me-4 md:top-1/2 md:h-3/6 md:transform md:-translate-y-1/2 md:px-3 md:bg-blue">
+    <header className="fixed z-50 md:relative flex justify-center items-center transition-all duration-500 ease-in-out rounded-xl row-start-1 sm:col-start-3 md:col-span-1   md:max-w-fit justify-self-end">
       <div
-        className="w-full h-full flex items-center justify-center"
+        className="w-full flex items-center justify-center md:bg-blue rounded-xl px-3 md:py-8"
         aria-label="Global">
         <div className="w-full">
           {/* BOTON DE MENU EN CELULAR */}
@@ -63,7 +63,7 @@ const Header = () => {
         className="md:hidden animate-fade"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}>
-        <div className="fixed inset-0 z-50 bg-sky" />
+        <div className="fixed inset-0 z-50 bg-royal" />
         <Dialog.Panel className="fixed inset-y-0 top-0 right-0 z-50 w-screen overflow-y-auto bg-gradient-to-t from-purple/50 to-black-300 text-white px-6 py-6 max-h-72 overflow-auto">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
@@ -86,7 +86,7 @@ const Header = () => {
                     key={item.nombre}
                     to={item.href}
                     onClick={handlerNav}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 underline decoration-porcelian">
                     {item.nombre}
                   </NavLink>
                 ))}
