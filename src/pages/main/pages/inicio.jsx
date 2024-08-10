@@ -1,4 +1,3 @@
-import Footer from "../../../components/footer/footer";
 import Blockquote from "../components/blockquote";
 import Headings from "../components/heading";
 import LineaTemporal from "../components/lineaTemporal";
@@ -32,7 +31,6 @@ function Inicio() {
           <LineaTemporal />
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

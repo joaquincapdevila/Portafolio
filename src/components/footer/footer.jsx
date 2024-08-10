@@ -28,7 +28,7 @@ const contacto = [
 ];
 const Footer = () => {
   return (
-    <footer className="rounded-lg shadow dark:bg-gray-800 max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl dark:text-white px-5 bg-white/5 hover:bg-white/10 shadow-md p-4 bg-royal/10">
+    <footer className="rounded-lg shadow mx-auto shadow-md p-4 bg-royal/10 max-w-5xl ">
       <div className="w-full mx-auto max-w-screen-xl md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2023 . All Rights Reserved.
