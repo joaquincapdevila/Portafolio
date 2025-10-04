@@ -42,7 +42,13 @@ const Proyecto = () => {
       estado: "Realizado",
     },
   ];
-
+  const colors = [
+    "border-b-accentPurple border-r-accentPurple",
+    "border-b-accentBlue border-r-accentBlue",
+    "border-b-accentPink border-r-accentPink",
+    "border-b-accentGreen border-r-accentGreen",
+    "border-b-primaryYellow border-r-primaryYellow",
+  ];
   // Calculamos la diferencia en días para cada proyecto
   proyect.forEach((p) => {
     const fechaCreacion = new Date(p.date);
@@ -61,10 +67,16 @@ const Proyecto = () => {
 
   return (
     <ul className="flex flex-col gap-8">
-      {proyect.map((datos) => (
+      {proyect.map((datos, index) => (
         <li
           key={datos.titulo}
-          className="max-w-4xl w-full mx-auto grid grid-cols-1 lg:max-w-5xl dark:text-white rounded-xl px-5 py-7  transition-colors bg-white/5 hover:bg-white/10 hover:cursor-pointer shadow-md bg-royal/10">
+          className={`max-w-4xl w-full mx-auto grid grid-cols-1 lg:max-w-5xl 
+        dark:text-white bg-white-200 backdrop-blur-xl 
+        border border-b-8 border-r-8 border-white/30 
+        rounded-xxl shadow-[20px_20px_20px_-15px_rgba(0,0,0,0.5)] 
+        text-white/80 hover:bg-white/40 hover:text-gray-900 
+        transition duration-300 p-8 
+        ${colors[index % colors.length]}`}>
           <a
             href={datos.href}
             rel="noreferrer"

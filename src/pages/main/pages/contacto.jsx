@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Formulario from "../components/formulario";
+import Formulario from "../../../components/formulario";
 import axios from "axios";
 
 function Contacto() {
@@ -37,7 +37,11 @@ function Contacto() {
 
   return (
     <>
-      <Formulario manejarCambio={manejarCambio} enviodeDatos={enviodeDatos} />
+      <Formulario
+        id="contact"
+        manejarCambio={manejarCambio}
+        enviodeDatos={enviodeDatos}
+      />
       {success && alert("salio bien")}
       {error && alert("salio mal")}
     </>

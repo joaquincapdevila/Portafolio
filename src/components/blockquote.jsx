@@ -1,6 +1,6 @@
 const Blockquote = () => {
   return (
-    <figure className="max-w-screen-md mx-auto text-center">
+    <figure className="max-w-screen-md mx-auto text-center bg-white/20 backdrop-blur-xl border border-b-8 border-r-8 border-white/30 border-b-accentPink border-r-accentPink rounded-xxl shadow-[20px_20px_20px_-15px_rgba(0,0,0,0.5)] text-white/80 hover:bg-white/40 hover:text-gray-900 transition duration-300 p-8">
       <svg
         className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
         aria-hidden="true"
@@ -15,13 +15,7 @@ const Blockquote = () => {
         </p>
       </blockquote>
       <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
-        <img
-          className="w-6 h-6 rounded-full"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-          alt="profile picture"
-        />
         <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
-          <cite className="pe-3 font-medium text-gray-900 dark:text-white"></cite>
           <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
             Ingeniero
           </cite>

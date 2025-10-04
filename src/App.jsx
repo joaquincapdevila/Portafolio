@@ -1,16 +1,14 @@
 import "./App.css";
 import Main from "./pages/main";
-// import Header from "./components/header/header";
-import AsideLeft from "./pages/aside/aside_left";
-import Header from "./pages/header/header";
-import Footer from "./components/footer/footer";
+import Header from "./pages/Header/header";
+import Footer from "./pages/Footer/Footer";
 
 function App() {
   return (
-    <div className="relative gap-2 grid grid-flow-col bg-white-200 overflow-auto px-4 py-2 h-screen w-screen">
+    <div className="App flex flex-col gap-4 p-4 md:p-8 lg:p-12 h-screen bg-background scrollbehavior-smooth transition-all">
       <Header />
       <Main />
-      <AsideLeft />
+      <Footer />
     </div>
   );
 }

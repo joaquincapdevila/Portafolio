@@ -37,6 +37,16 @@ module.exports = {
         200: "#D3F4F0",
       },
       transparent: "transparent",
+      background: "#F2F6F9",
+      primaryYellow: "#FFD84D",
+      accentPink: "#F27D7D",
+      accentPurple: "#9C7CFF",
+      accentBlue: "#5BBDF2",
+      accentGreen: "#8CCF82",
+      darkText: "#333333",
+      grayText: "#777777",
+      lightGray: "#E8E8E8",
+      cardBackground: "#FAFAFA",
     },
     borderRadius: {
       xxl: `calc(var(--radius) + 20px)`,
@@ -63,8 +73,9 @@ module.exports = {
       fadeToRight: "fadeToRight 1.3s ease-in-out",
     },
     boxShadow: {
-      "3xl": " -5px -6px -1px rgba(0, 0, 0, 1)",
+      "3xl": "20px_20px_20px_-15px_rgba(0,0,0,0.5)",
     },
+    scrollBehavior: "smooth",
   },
   plugins: [
     function ({ addUtilities }) {
